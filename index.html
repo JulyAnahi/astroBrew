@@ -1,0 +1,114 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>AstroBrew</title>
+</head>
+<body>
+
+<header>
+    <div class="logo">
+        <h1>Astro<span>BREW</span></h1>
+        <p>Cafe de origen cósmico</p>
+    </div>
+    <nav>
+        <ul>
+            <li><a href="#">Inicio</a></li>
+            <li><a href="#productos">Productos</a></li>
+            <li><a href="#reseñas">Reseñas</a></li>
+            <li><a href="#contacto">Contacto</a></li>
+        </ul>
+    </nav>
+</header>
+    
+<main>
+    <section id="productos">
+        <h2>Nuestras mezclas estelares</h2>
+        <div class="card-container">
+            <div class="card">
+                <img src="/assets/jeremy-yap-jn-HaGWe4yw-unsplash.jpg" alt="">
+                <h3>Nebulosa Roja</h3>
+                <p>Cuerpo intenso, notas de frutos rojos y un toque de canela estelar</p>
+                <span class="precio">$12.99</span>
+                <button>Comprar</button>
+            </div>
+            <div class="card">
+                <img src="/assets/jeremy-yap-jn-HaGWe4yw-unsplash.jpg" alt="">
+                <h3>Nebulosa Roja</h3>
+                <p>Cuerpo intenso, notas de frutos rojos y un toque de canela estelar</p>
+                <span class="precio">$12.99</span>
+                <button>Comprar</button>
+            </div>
+            <div class="card">
+                <img src="/assets/nathan-dumlao-2z3MOB3kfJU-unsplash.jpg" alt="">
+                <h3>Galaxia</h3>
+                <p>Tostado oscuro,chocolate amargo y final ahumado. Energia pura</p>
+                <span class="precio">$15.99</span>
+                <button>Comprar</button>
+            </div>
+            <div class="card">
+                <img src="/assets/pariwat-pannium-rzX8bOle9xs-unsplash.jpg" alt="">
+                <h3>Estrella Neutrón </h3>
+                <p>Edición limitada: alto en cafeina, notas de caramelo y frutos secos.>
+                <span class="precio">$18.99</span>
+                <button>Comprar</button>
+            </div>
+            <div class="card">
+                <img src="/assets/patrick-langwallner-Kt1Mk1BrqdU-unsplash.jpg" alt="">
+                <h3>Cometa veloz</h3>
+                <p>Suave, cítrico y con un brillo acido que despierta el paladar </p>
+                <span class="precio">$11.39</span>
+                <button>Comprar</button>
+            </div>
+        </div>
+
+    </section>
+    <section id="reseñas" class="reseñas">
+        <h2>Lo que dicen los astronautas</h2>
+        <div class="grid-reseñas">
+            <div class="review">
+                <p>El mejor café la Nebulosa Roja me mantiene despierto durante mis horas de trabajo
+                <h4>Dra. Luna</h4>
+            </div>
+            <div class="review">
+                <p>El mejor café la Nebulosa Roja me mantiene despierto durante mis horas de trabajo
+                <h4>Dra. Luna</h4>
+            </div>
+            <div class="review">
+                <p>Envío rápido y el empaque parece traído de Marte. 10/10                                            
+                <h4>Capitan Luna </h4>
+            </div>
+            <div class="review">
+                <p>La variedad de Estrella Neutrón me conecta con otra dimensión</p>
+                <h4>Andromeda J.</h4>
+            </div>
+        </div>
+    </section>
+    <section id="contacto" class="contacto">
+        <h2>Contactanos</h2>
+        <div class="contacto-form">
+            <div class="info-contacto">
+                <p><strong>Email:</strong> hola@astrobrew.com</p>
+                <p><strong>whatsapp:</strong> +1 (555) 123-4567</p>
+            </div>
+            <form action="https://formspree.io/f/xpqbrlgp" method="POST" class="formulario" >
+                <label for="nombre">Nombre completo</label>
+                <input type="text" id="nombre" name="nombre" placeholder="Ej. Neil Amstrong" required>
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" placeholder="Ej. neil@astrobrew.com" required>
+                <textarea name="mensaje" id="mensaje" rows="4" placeholder="¿Que café te gustaria probar?"></textarea>
+                <button type="submit">Enviar mensaje</button>
+            </form>
+        </div>
+
+    </section>
+
+    <footer>
+        <p>@2023 AstroBrew. Todos los derechos reservados.</p>
+        <p>Hecho con ❤️ por el equipo de AstroBrew</p>
+    </footer>
+</main>
+</body>
+</html>

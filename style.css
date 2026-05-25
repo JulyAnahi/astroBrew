@@ -1,0 +1,192 @@
+/* RESET  */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    /* background:linear-gradient(145deg, #f9f3e7 0%, #f0e2d0 100%) ; */
+    color:#1e1a17;
+    line-height: 1.5;
+}
+
+h1, h2, h3, h4, .logo p {
+    font-family: 'Space Grotesk', monospace;
+    color: #1e1a17;
+    margin-bottom: 20px;
+}
+
+header {
+    background-color: #1a120e;
+    color: #f0e2d0;
+    padding: 1rem 2rem;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1rem;
+}
+
+header h1 {
+    color: #f0e2d0;
+}
+.logo h1{
+    font-size: 1.6rem;
+}
+
+.logo span{
+    color: #e6b17e;
+}
+
+nav ul{
+    list-style: none;
+    display: flex;
+    gap: 1.5rem;
+}
+
+nav a {
+    color: #f0e2d0;
+    text-decoration: none;
+    font-weight: 500;
+    transition: 0.3s;
+}
+nav a:hover {
+    color: #e6b17e;
+}
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 2rem;
+    justify-content: center;
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.card{
+    background-color: #f0e2d0;
+    border-radius: 1.5rem;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    width: 300px;
+    transition: transform 0.3s;
+    padding: 1rem;}
+.card:hover {
+    transform: translateY(-6px);
+}
+.card img {
+    width: 100%;
+    border-radius: 1rem;
+    object-fit: cover;
+    background: #ddd;
+}
+.card h3{
+    margin: 0.8rem 0 0.4rem;
+}
+.precio{
+    display:block;
+    font-weight: bold;
+    font-size: 1.3rem;
+    color:#b45f2b;
+    margin: 0.6rem 0;
+
+}
+.card button{
+    background-color: #1a120e;
+    color: #f0e2d0;
+    border: none;
+    padding: 0.8rem 1.5rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    transition: background-color 0.3s;
+}
+
+/* SECCION DE RESEÑAS */
+.grid-reseñas {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+    gap: 1.5rem;
+    margin-top: 2rem;
+}
+.review{
+    background: #fffcf9;
+    padding: 1.5rem;
+    border-left: 6px solid #e6b17e;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+.review h4{
+    text-align:right;
+    color:#b45f2b ;
+    margin-bottom: 0.5rem;
+}
+.review p{
+    font-style: italic;
+    color:#1e1a17;
+    margin-bottom: 0.8rem;
+}
+/* sECCION DE CONTACTO */
+
+.contacto{
+    background: #e9dfd1;
+    border-radius: 2rem;
+    margin-top:2rem;
+    padding:2rem;
+
+}
+.contacto-form{
+    display:flex;
+    gap: 2rem;
+    margin-top:1rem;
+    align-items: flex-start;
+}
+.formulario{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    gap: 0.6rem;
+    background:white;
+    padding: 1.5rem;
+    border-radius: 1.5rem;
+    box-shadow: 0 8px 20px rgba(0, 0, 0, 0.5);
+    width: clamp(200px, 100%, 700px); 
+}
+
+.formulario input, .formulario textarea{
+    padding: 0.7rem;
+    border: 1px solid #ccc;
+    border-radius: 0.5rem;
+    font-family: inherit;
+}
+.formulario button{
+    background: #1a120e;
+    color: white;
+    border: none;
+    padding: 0.8rem;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    font-weight: bolder;
+    margin-top: 0.5rem;
+}
+
+/* RESPONSIVE */
+@media (max-width:700px){
+    .contacto-form {
+        flex-direction:column;
+    }
+    /* info-contacto, .formulario{
+        width: 100%;
+    } */
+}
+
+/* FOOTER */
+footer{
+background-color:#1a120e;
+color: #c6b6a8;
+text-align: center;
+padding: 1.5rem;
+margin-top: 2rem;
+font-size: 0.85rem;
+}
+h2{
+    margin-top: 2rem;
+}
